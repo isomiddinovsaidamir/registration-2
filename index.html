@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <link rel="stylesheet" type="text/css" href="normalize.css">
+       <link rel="stylesheet" type="text/css" href="css/style.css">
+       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+       <title>Log in</title>
+       <style>
+        * {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #ccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+
+.section-log-in {
+  width: 40rem;
+  height: 50rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/photo.jpg);
+  background-size: cover;
+  margin: 8rem auto;
+  border: 2px;
+  box-shadow: -11px 24px 16px -4px rgba(0, 0, 0, 0.75); }
+
+h1 {
+    text-align: center;
+    padding: 2rem 2rem;
+    display: inline-block;
+    letter-spacing: 2px;    
+    width: 100%;
+    border-bottom: 2px solid orange;
+    font-weight: 300;
+    font-size: 3rem;
+    color: rgba(244, 242, 242, 0.81); }
+
+.log-in {
+  width: 32rem;
+  display: block;
+  transform: translate(12%, 7%); }
+
+.form-input {
+  margin-bottom: -10px;
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1rem 1rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 32rem;
+  height: 4rem;
+  display: block;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  border-bottom: 3px solid green; }
+
+.form-input:focus:invalid {
+  border-bottom: 3px solid orange; }
+
+.form-input::-webkit-input-placeholder {
+  color: #ccc; }
+
+.form-input:placeholder-shown + .form-label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
+.form-label {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s;
+  color: #c6c6c6; }
+
+textarea {
+    padding: 1rem 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    display: block;
+    color: inherit;
+    width: 32rem;
+    height: 8rem;
+    border-radius: 3px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.text-style {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: #c6c6c6;
+    display: block;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #ccc; }
+
+textarea:focus { 
+    color: #020202;
+    outline: none; 
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid green;
+}
+
+.submit {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 3.6rem;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  display: block;
+  text-decoration: none;
+  border-radius: 3px;
+  background-color: rgba(255, 165, 0, 0.8);
+  color: #ccc;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+
+.submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+
+.submit:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+
+        </style>
+     </head>
+     <body>
+         <header>
+             <section class="section-log-in">
+               <h1>Create about you!</h1>
+                <div class="log-in">
+                        <div class="login-form">
+                              <input type="text" class="form-input" id="name" placeholder="Full name" required>
+                              <label for="name" class="form-label">Full name</label>
+                        </div> 
+                        <div class="login-form">      
+                              <input type="text" class="form-input" id="your profession" placeholder="Your profession" required>
+                              <label for="email" class="form-label">Your profession</label>
+                        </div>
+                        <textarea name="message" class="text-style" placeholder="Little bit about yourself..."></textarea>
+                        <input type="submit" class="submit" value="Next &rarr;">
+                </div>    
+             </section>
+         </header>
+     </body>
+</html>
